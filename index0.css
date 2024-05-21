@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #000; /* Background color */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000 url('https://wallpapercave.com/wp/wp10641548.jpg') no-repeat center center fixed;
+    background-size: cover;
+    flex-direction: column;
+
+}
+.wrapper {
+    flex: 1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.login {
+    margin-right: 20px;
+}
+
+.get-started-container {
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #fff;
+}
+
+p {
+    font-size: 18px;
+    color: #ccc;
+    margin: 10px 0;
+}
+
+.body-paragraph {
+    font-size: 18px;
+    color: #ccc;
+    text-align: center;
+    margin: 20px;
+}
+
+.email-get-started {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input, button {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #333;
+    border: none;
+    color: #fff;
+    transition: transform 0.2s;
+}
+
+button {
+    cursor: pointer;
+    background-color: #ff0000;
+    transition: transform 0.2s; /* Add hover effect */
+}
+
+.email-get-started:hover input, .email-get-started:hover button, .login button:hover {
+    transform: translate(0, -5px);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.safariverse-text {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* for sign up*/
+.signup-container, .signup-container {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-box, .signin-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.signup-form, .signin-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#signup-button:hover, #signin-button:hover {
+    transform: translate(0, -5px);
+}
+
+.login-text {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.login-text a {
+    color: #ff0000;
+    text-decoration: none;
+    transition: text-decoration 0.2s;
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}
+.signup-form, .signin-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.signup-form input, .signin-form input {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #333;
+    border: none;
+    color: #fff;
+    transition: transform 0.2s;
+}
+
+.signup-form button, .signin-form button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ff0000;
+    border: none;
+    color: #fff;
+    transition: transform 0.2s;
+}
+
+.signup-form button:hover, .signup-form button:hover {
+    transform: translate(0, -5px);
+}
+
+
+
+.password-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.password-field {
+    padding-right: 30px;
+}
+
+.password-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #ff5733;
+}
+
+.password-icon:hover {
+    text-decoration: underline;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #ccc;
+    margin: 10px 0;
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}

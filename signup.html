@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index0.css" type="text/css">
+    <title>Sign Up - SafariVerse</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">SafariVerse</div>
+            <div class="login"><button id="login-button">Login</button></div>
+        </header>
+        <div class="signup-container">
+            <div class="signup-box">
+                <h1 id="sign-up">Sign Up for SafariVerse</h1>
+                <p class="body-paragraph">Join SafariVerse and embark on a journey through the realms of literature. Create an account to unlock a world of stories and imagination.</p>
+                <form id="signup-form">
+                    <div class="signup-form">
+                    <input type="password" id="password" placeholder="Create a password">
+                    <button id="signup-button">Sign Up</button>
+                </div>
+                </form>
+                <p class="login-text">Not a new user? <a href="signin.html">Sign in</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo">SafariVerse</div>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("signup-button").addEventListener("mouseenter", function() {
+            this.style.transform = "translate(0, -5px)";
+        });
+
+        document.getElementById("signup-button").addEventListener("mouseleave", function() {
+            this.style.transform = "translate(0, 0)";
+        });
+    </script>
+</body>
+</html>

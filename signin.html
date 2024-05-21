@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index0.css" type="text/css">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Sign Up - SafariVerse</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">SafariVerse</div>
+            <div class="login"><button id="login-button">Login</button></div>
+        </header>
+        <div class="signin-container">
+            <div class="signin-box">
+                <h1 id="sign-in">Sign In for SafariVerse</h1>
+                <p class="body-paragraph">Join SafariVerse and embark on a journey through the realms of literature. Create an account to unlock a world of stories and imagination.</p>
+                <form id="signin-form">
+                    <div class="signin-form">
+                        <input type="text" id="email" placeholder="Email or Username">
+                        <div class="password-input">
+                            <input type="password" id="password" placeholder="Password" class="password-field">
+                            <i id="show-password" class="fa fa-eye password-icon"></i>
+                        </div>
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember-me"> Remember Me
+                        </div>
+                        <button id="signin-button">Sign In</button>
+                    </div>
+                </form>
+                <p class="login-text"><a href="forgot-password.html">Forgot Password</a></p>
+                <p class="login-text">Not a new user? <a href="index0.html">Sign up</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo">SafariVerse</div>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("signup-button").addEventListener("mouseenter", function() {
+            this.style.transform = "translate(0, -5px)";
+        });
+
+        document.getElementById("signup-button").addEventListener("mouseleave", function() {
+            this.style.transform = "translate(0, 0)";
+        });
+        //
+    
+        //  for showing or hiding password
+
+        const passwordField = document.getElementById("password");
+        const showPasswordIcon = document.getElementById("show-password");
+
+        showPasswordIcon.addEventListener("click", function() {
+            if (passwordField.type === "password") {
+                passwordField.type = "text"; // Show password
+            } else {
+                passwordField.type = "password"; // Hide password
+            }
+        });
+    </script>
+</body>
+</html>

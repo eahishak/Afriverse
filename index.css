@@ -1,0 +1,413 @@
+
+
+body {
+    font-size: 16px;
+    width: 100%;
+    margin: 0px;
+    overflow: auto;
+}
+
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.login {
+    margin-right: 20px;
+}
+
+/* Make SafariVerse heading on the top-left corner on the same level with search and login */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*  Provide a background image for all header part with the size that fits */
+header {
+    background-image: url('https://cdn.mos.cms.futurecdn.net/HgNuLpR2yeCGqNvcUjoVu3.jpg');
+    background-size: cover;
+    padding: 20px;
+    color: white;
+
+}
+
+/*Make buttons big enough and float on the same line and link to Season 1 */
+.buttonList button {
+    font-size: 5em !important;
+    padding: 10px 20px;
+    margin: 10px;
+    float: left;
+}
+/* Make all main book 1, 2, 3, 4,5, 6 float on the same line and contain images */
+.main-bookpick {
+    display: flex;
+}
+
+.main-bookpick-book1,
+.main-bookpick-book2,
+.main-bookpick-book3,
+.main-bookpick-book4,
+.main-bookpick-book5,
+.main-bookpick-book6 {
+    flex: 0 0 16.66%;
+    text-align: center;
+}
+
+.main-bookpick img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Clicking on the login button prompts a sign-in form */
+.login-button {
+    cursor: pointer;
+}
+
+/* Style the login form */
+#login-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* for login part */
+
+.login-container {
+            display: none; /* Initially hide the login container */
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        /*Headermain message*/
+.header-main-message{
+    height: 80%;
+    width: 30%;
+    margin-bottom: 6em;
+    margin-top: 7em;
+}
+.header-main-message h3{
+    font-weight:bold;
+    color: #00ff00;
+    size: 2em;
+
+
+
+        }
+
+        .header-main-message span{
+            color: #ffffff;
+            size: 1em;
+        }
+
+/* For main seasons */
+.main-seasons ul {
+    clear:both;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.main-seasons {
+    color: white;
+    background-color: #000000; 
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-seasons li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+  }
+
+
+nav a, .main-seasons a {
+    text-decoration: none; /* Remove underlines from links */
+    color: inherit; /* Inherit the text color */
+    font-size: 20px; /* Increase the font size */
+}
+
+/* for the background video*/
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+/*
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+*/
+
+/* For book pick*/
+.main-bookpick {
+    margin:0.5em;
+    width: 100%;
+    height: 70%;
+
+}
+
+/* for books hover*/
+.main-bookpick-book1:hover,
+.main-bookpick-book2:hover,
+.main-bookpick-book3:hover,
+.main-bookpick-book4:hover,
+.main-bookpick-book5:hover,
+.main-bookpick-book6:hover {
+    transform: scale(1.1); /* Enlarge the book on hover */
+    transition: transform 0.3s ease;
+    z-index: 2; /* Move the book to the front on hover */
+}
+
+/* Button List*/
+
+.buttonList button {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color:inherit; /* Add stunning color */
+    color: inherit;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttonList button:hover {
+    background-color: #ff7f50; /* Add stunning color change on hover */
+}
+
+.buttonList button:first-child {
+    margin-left: 0; /* Remove the margin for the first button */
+}
+
+/* Footer Section */
+footer {
+    clear:both;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-description {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-links {
+    flex: 1;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.footer-copyright {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+/* for login part */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  .login-button button{
+    background-color: #11110d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    outline: none;
+    
+  }
+  button .new-button-login:focus{
+    
+        outline: none;
+  }
+  .login-button button:hover {
+    opacity: 0.5;
+  }
+  .container button {
+    background-color: #11110d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .container button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 2em 0 1em 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 20%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+
+    margin-left: 18em;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 60%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+
+
+
+
+
+
+
+
+

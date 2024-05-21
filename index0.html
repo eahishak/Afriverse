@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index0.css" type="text/css">
+    <title>Get Started - SafariVerse</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">SafariVerse</div>
+            <div class="login"><button id="login-button">Login</button></div>
+        </header>
+        <div class="get-started-container">
+            <h1 id="get-started">Get Started with SafariVerse</h1>
+            <p>Explore a world of imagination and captivating stories.</p>
+            <p class="body-paragraph">
+                Welcome to SafariVerse, where the magic of storytelling comes alive. Dive into a world of incredible adventures and discover the power of imagination.
+            </p>
+            <div class="email-get-started">
+                <input type="email" id="email" placeholder="Enter your email">
+                <button id="get-started-button">Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo">SafariVerse</div>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("get-started-button").addEventListener("click", function() {
+            window.location.href = "signup.html?email=" + encodeURIComponent(document.getElementById("email").value);
+        });
+
+        // Add hover effect to the login button
+        document.querySelector(".login button").addEventListener("mouseenter", function() {
+            this.style.transform = "translate(0, -5px)";
+        });
+
+        document.querySelector(".login button").addEventListener("mouseleave", function() {
+            this.style.transform = "translate(0, 0)";
+        });
+    </script>
+</body>
+</html>
