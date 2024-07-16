@@ -1,0 +1,895 @@
+body {
+    
+    margin: 0 2px !important;
+    padding: 0;
+    background-image: url('img/back1.jpg'); /* Replace 'your-background-image.jpg' with your image file path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif; /* Change the font-family as needed */
+    color: #fff; /* Set text color to white or a suitable contrasting color */
+/* overflow:hidden !important;*/
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for header */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    background-color: #33ff00!important;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ffd700; /* Change the color on hover */
+}
+
+section {
+    padding: 2em;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#home {
+    text-align: center;
+    position: relative;
+}
+
+.slider-container {
+    overflow: hidden;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slider img {
+    width: 70%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+
+/* Slider*/
+/* Additional Styling for Image Slider */
+
+.slider-container {
+    overflow: hidden;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+/* Adjusted slider images for a sliding effect */
+.slider img {
+    object-fit: cover;
+    margin-right: 20px; /* Added margin to create space between slides */
+}
+
+.slider img:last-child {
+    margin-right: 0; /* Remove margin from the last image */
+}
+
+/* Hover animation for the slider container */
+.slider-container:hover .slider {
+    transform: translateX(-100%);
+}
+
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+iframe {
+    margin: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+  /* Footer styles */
+  footer {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* JavaScript for interactivity */
+footer {
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+footer:hover {
+    background-color: #2980b9;
+}
+
+/* Additional Styling for New Sections */
+
+#applications, #challenges, #future, #more-images, #more-videos,
+#industry-impact, #ethics, #user-feedback, #inspiration, #exclusive-videos,
+#education, #events, #contact, #testimonials, #newsletter {
+    background-color: #f9f9f9;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-around;
+}
+/*
+.testimonial {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+    background-color: #fff;
+}
+*/
+#newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#newsletter input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#newsletter button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#newsletter button:hover {
+    background-color: #555;
+}
+
+/*more codes*/
+/* Additional Styling for Navigation and Header */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Styling for Sections */
+
+section h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+section p {
+    line-height: 1.6;
+}
+
+/* Styling for Image Gallery */
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:;
+}
+
+.image-gallery img {
+    width: 100%;
+    max-width: auto;
+    margin: 0px;
+    border-radius: 8px;
+}
+
+/* Styling for Testimonials */
+/*
+#testimonials {
+    background-color: #f9f9f9;
+    padding: 30px 0;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.testimonial {
+    width: 45%;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+}
+*/
+/* Styling for Newsletter */
+
+#newsletter {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+#newsletter p {
+    margin-bottom: 20px;
+}
+
+#newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#newsletter input {
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+#newsletter button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#newsletter button:hover {
+    background-color: #ddd;
+}
+
+
+/*Nav*/
+/* Updated Navigation Styling */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #333;
+    padding: 1em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    display: block;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: #ffd700; /* Change the color on hover */
+}
+
+/* Updated Navigation Dropdown Styling */
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #000;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li:hover > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul ul li {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+/* Additional Styling for Navigation */
+
+nav a.nav-logo {
+    font-size: 1.5em;
+}
+
+/* Updated Styling for Nav Bar on Smaller Screens */
+
+@media screen and (max-width: 700px) {
+    nav {
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+}
+
+/*images in siderbar1*/
+/* Additional Styling for Image Slider */
+
+.slider-container {
+    overflow: hidden;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slider img {
+    width: 50%;
+    min-width: 50%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Additional Styling for Instagram Posts */
+
+#instagram {
+    background-color: #f9f9f9;
+    padding: 30px 0;
+}
+
+.instagram-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.instagram-container blockquote.instagram-media {
+    margin: 10px;
+}
+/* Updated Styling for Image Slider and Gallery */
+
+.slider-container {
+    overflow: hidden;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slider img {
+    width: 80%;
+    max-width: 300px; /* Adjusted max-width for a more moderate size */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#more-images {
+    background-color: #f9f9f9;
+    padding: 30px 0;
+}
+
+.image-gallery img {
+    width: 50%;
+    max-width: 100px; /* Adjusted max-width for a more moderate size */
+    margin: 10px;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Additional Styling for Image Gallery */
+
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.image-gallery img:hover {
+    transform: scale(1.1);
+}
+.slider img {
+    
+    object-fit: cover;
+    margin-right: 20px; /* Added margin to create space between slides */
+}
+
+.slider img:last-child {
+    margin-right: 0; /* Remove margin from the last image */
+}
+
+
+/* Additional Styling for Visuals Container */
+
+.visuals-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.visual {
+    width: 45%;
+    margin: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.visual img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.visual iframe {
+    width: 100%;
+    border: none;
+    border-radius: 8px 8px 0 0;
+}
+
+/*Moe nav codes
+/* Existing styles */
+
+/* Updated Navigation Styling */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #1a1a1a; /* Dark background color for the navigation */
+    padding: 1em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    display: block;
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners for the navigation links */
+}
+
+nav a:hover {
+    color: #ffd700; /* Change the color on hover */
+    background-color: #333; /* Darker background color on hover */
+}
+
+/* Updated Navigation Dropdown Styling */
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #000;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li:hover > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul ul li {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+/* Contact US*/
+
+/* Add this CSS code at the end of your existing styles.css file */
+     /* Contact Us section styles */
+     #contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: transform 0.5s ease-in-out;
+        background-color: #3498db;
+        color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    #contact:hover {
+        transform: translateX(10px);
+    }
+
+    #contact form {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+    }
+
+    #contact form:hover {
+        background-color: #fff;
+    }
+
+    #contact form label,
+    #contact form textarea,
+    #contact form input {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 15px;
+        box-sizing: border-box;
+        border: 1px solid #3498db;
+        border-radius: 4px;
+        transition: border-color 0.3s ease-in-out;
+    }
+
+    #contact form label {
+        display: block;
+        font-weight: bold;
+    }
+
+    #contact form input:focus,
+    #contact form textarea:focus {
+        border-color: #27ae60;
+    }
+
+    #contact button {
+        padding: 10px 20px;
+        background-color: #2ecc71;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    #contact button:hover {
+        background-color: #27ae60;
+    }
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  .section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .section:hover {
+    transform: scale(1.02);
+  }
+  
+  h2 {
+    font-size: 28px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .background-gradient {
+    background: linear-gradient(to right, #36D1DC, #5B86E5);
+    color: #fff;
+  }
+  
+  /* Add hover effect for links */
+  a {
+    color: #5B86E5;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  a:hover {
+    color: #333;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #eee;
+    padding: 10px;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:hover {
+    background-color: #8DC73F;
+    color: #fff;
+}
+
+.green-background {
+    background-color: #8DC73F;
+}
+
+.slider-container {
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+.section {
+    padding: 20px;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.video {
+    margin: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .slider img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+
+    nav {
+        padding: 5px;
+    }
+
+    .slider img {
+        width: 100%;
+        height: auto;
+    }
+
+    .section {
+        padding: 10px;
+    }
+
+    .video-container {
+        flex-direction: column;
+    }
+
+    .video {
+        margin: 10px 0;
+    }
+}
+
+/* Add more media queries as needed */
+
+.rotating-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    overflow: hidden;
+}
+
+.rotating-images img {
+    width: 19em;
+    height: 15em;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.rotating-images img:hover {
+    transform: scale(1.1);
+}
+
+
+section {
+    position: relative;
+    height: auto;
+}
+
+.image-gallery {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    animation: floatAnimation 5s linear infinite; /* Add a continuous float animation */
+}
+
+.image-gallery img {
+    width: 700vw !important; /* Set image width to 100% of viewport width */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Add smooth transitions */
+    margin-right: 20px; /* Add margin between images */
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2); /* Add brightness on hover */
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px); /* Adjust the float distance */
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
